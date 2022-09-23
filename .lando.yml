@@ -1,0 +1,13 @@
+name: strapi
+recipe: lemp
+config:
+  webroot: public
+  database: mariadb:10.5
+services:
+  database:
+    type: mariadb:10.5
+    portforward: 3311
+    creds:
+      user: strapi
+      password: strapi
+      database: strapi
